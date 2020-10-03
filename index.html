@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/index.css">
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="public/dalegacusan_icon.jpg" type="image/x-icon">
+    
+    <title>Books Collection - Dale Gacusan TOP</title>
+</head>
+<body>
+
+    <div class="mainContainer">
+        <h1 id="mainContainerHeader">Books Collection</h1>
+            <div class="howToUseHeaderContainer">
+                <p id="howToUseHeader">How to use?</p>
+            </div>
+            <div class="howToUseContainer">
+                <p class="howToUseText">1. <span class="howToHighlight">Add</span> a book by clicking the <i>Add New Book</i> button below.</p>
+                <p class="howToUseText">2. <span class="howToHighlight">Delete</span> a book by clicking the <i>Delete Book</i> button of the card.</p>
+                <p class="howToUseText">3. To <span class="howToHighlight">change book status</span>, click the <i>Read/Not Read</i> button of the card.</p>
+            </div>
+        
+        <!-- Trigger Modal -->
+        <div id="addBookContainer">
+            <button type="button" id="addBookButton">Add New Book</button>
+        </div>
+
+        <div class="booksContainer"></div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal Content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Add New Book</h2>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="addBookForm" autocomplete="off">
+                        <div>
+                            <label for="bookTitle">Book Title</label>
+                            <input type="text" name="bookTitle" class="formInput">
+                        </div>
+                        <div>
+                            <label for="bookAuthor">Author</label>
+                            <input type="text" name="bookAuthor" class="formInput">
+                        </div>
+                        <div>
+                            <label for="bookPages">Number of Pages</label>
+                            <input type="text" name="bookPages" class="formInput">
+                        </div>
+                        <div>
+                            <label for="read">Read</label>
+                            <input type="radio" name="status" value="read" id="readStatusButton">
+                            <label for="read">Not Read</label>
+                            <input type="radio" name="status" value="notRead" id="notReadStatusButton">
+                        </div>
+                        <div class="saveBookContainer">
+                            <button type="submit" id="saveBookButton">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
