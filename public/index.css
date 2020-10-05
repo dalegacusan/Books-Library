@@ -185,6 +185,9 @@
     #addBookButton{
         width: 100%;
     }
+    .mainContainer{
+        width: 70%;
+    }
     .modal-content{
         width: 80%;
     }
