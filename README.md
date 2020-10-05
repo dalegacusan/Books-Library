@@ -15,7 +15,7 @@ This application offers adding books, deleting books, and setting their status a
 This project is hosted using GitHub.
 
 
-[Click me for a live demo.](https://choosealicense.com/licenses/mit/)
+[Click me for a live demo.](https://dalegacusan.github.io/Books-Library/)
 
 ## Screenshots
 ![Screenshot1](https://i.imgur.com/RhFSqhV.png)
