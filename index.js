@@ -40,7 +40,7 @@ function displayBooks(){
 
     for(let item of myLibrary){
         const container = document.createElement("div");
-        container.classList.add("container");
+        container.classList.add("bookContainer");
 
         const status = document.createElement("button");
         status.classList.add("status");
@@ -124,10 +124,11 @@ window.onclick = (e) => {
 };
 
 // Form Handler
-addBookForm.addEventListener( "submit", function(e){
+addBookForm.addEventListener("submit", function(e){
     e.preventDefault();
 
     const formData = new FormData(e.target);
+    console.log(formData);
 
     const bookTitle = formData.get('bookTitle');
     const bookAuthor = formData.get('bookAuthor');

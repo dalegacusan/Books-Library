@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="public/index.css">
 
     <!-- FavIcon -->
     <link rel="shortcut icon" href="public/dalegacusan_icon.jpg" type="image/x-icon">
-    
+
     <title>Books Collection - Dale Gacusan TOP</title>
 </head>
+
 <body>
 
     <div class="mainContainer">
         <h1 id="mainContainerHeader">Books Collection</h1>
-            <div class="howToUseHeaderContainer">
-                <p id="howToUseHeader">How to use?</p>
-            </div>
-            <div class="howToUseContainer">
-                <p class="howToUseText">1. <span class="howToHighlight">Add</span> a book by clicking the <i>Add New Book</i> button below.</p>
-                <p class="howToUseText">2. <span class="howToHighlight">Delete</span> a book by clicking the <i>Delete Book</i> button of the card.</p>
-                <p class="howToUseText">3. To <span class="howToHighlight">change book status</span>, click the <i>Read/Not Read</i> button of the card.</p>
-            </div>
-        
+        <div class="howToUseHeaderContainer">
+            <p id="howToUseHeader">How to use?</p>
+        </div>
+        <div class="howToUseContainer">
+            <p class="howToUseText">1. <span class="howToHighlight">Add</span> a book by clicking the <i>Add New
+                    Book</i> button below.</p>
+            <p class="howToUseText">2. <span class="howToHighlight">Delete</span> a book by clicking the <i>Delete
+                    Book</i> button of the card.</p>
+            <p class="howToUseText">3. To <span class="howToHighlight">change book status</span>, click the <i>Read/Not
+                    Read</i> button of the card.</p>
+        </div>
+
         <!-- Trigger Modal -->
         <div id="addBookContainer">
             <button type="button" id="addBookButton">Add New Book</button>
@@ -35,34 +42,60 @@
         <!-- Modal -->
         <div id="myModal" class="modal">
             <!-- Modal Content -->
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="modal-content container">
+                <div class="modal-heading">
                     <span class="close">&times;</span>
-                    <h2>Add New Book</h2>
+                    <p class="modalHeadingText">Add New Book</p>
                 </div>
                 <div class="modal-body">
                     <form action="#" id="addBookForm" autocomplete="off">
-                        <div>
-                            <label for="bookTitle">Book Title</label>
-                            <input type="text" name="bookTitle" class="formInput">
+
+                        <div class="form-group row">
+                            <label for="bookTitle" class="col-sm-4 col-form-label">Book Title</label>
+                            <div class="col-sm-8">
+                                <input type="text" name="bookTitle" class="form-control formInput" id="bookTitle">
+                            </div>
                         </div>
-                        <div>
-                            <label for="bookAuthor">Author</label>
-                            <input type="text" name="bookAuthor" class="formInput">
+
+                        <div class="form-group row">
+                            <label for="bookAuthor" class="col-sm-4 col-form-label">Author</label>
+                            <div class="col-sm-8">
+                                <input type="text" name="bookAuthor" class="form-control formInput" id="bookAuthor">
+                            </div>
                         </div>
-                        <div>
-                            <label for="bookPages">Number of Pages</label>
-                            <input type="text" name="bookPages" class="formInput">
+
+                        <div class="form-group row">
+                            <label for="bookPages" class="col-sm-4 col-form-label">Number of Pages</label>
+                            <div class="col-sm-8">
+                                <input type="text" name="bookPages" class="form-control formInput" id="bookPages">
+                            </div>
                         </div>
-                        <div>
-                            <label for="read">Read</label>
-                            <input type="radio" name="status" value="read" id="readStatusButton">
-                            <label for="read">Not Read</label>
-                            <input type="radio" name="status" value="notRead" id="notReadStatusButton">
-                        </div>
-                        <div class="saveBookContainer">
-                            <button type="submit" id="saveBookButton">Save</button>
-                        </div>
+
+                        <fieldset class="form-group">
+                            <div class="row">
+                              <legend class="col-form-label col-sm-4 pt-0">Status</legend>
+                              <div class="col-sm-8">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="status" id="readStatusButton" value="read">
+                                  <label class="form-check-label formInput" for="readStatusButton">
+                                    Read
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="status" id="notReadStatusButton" value="notRead">
+                                  <label class="form-check-label formInput" for="notReadStatusButton">
+                                    Not Read
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+
+                          <div class="form-group row">
+                            <div class="col-sm-12 d-flex flex-row-reverse">
+                              <button type="submit" class="btn" id="saveBookButton">Save</button>
+                            </div>
+                          </div>
                     </form>
                 </div>
             </div>
@@ -71,4 +104,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>
