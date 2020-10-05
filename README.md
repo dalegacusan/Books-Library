@@ -18,6 +18,6 @@ This project is hosted using GitHub.
 [Click me for a live demo.](https://dalegacusan.github.io/Books-Library/)
 
 ## Screenshots
-![Screenshot1](https://i.imgur.com/RhFSqhV.png)
+![Screenshot1](https://imgur.com/XbmyV39.png)
 
-![Screenshot2](https://imgur.com/gPo1WED.png)
+![Screenshot2](https://imgur.com/P4GOufH.png)
