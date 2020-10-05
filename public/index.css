@@ -1,6 +1,12 @@
+body{
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
 .mainContainer{
     width: 50%;
     margin: auto;
+    margin-top: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -23,6 +29,7 @@
 #howToUseHeader{
     font-weight: bold;
     display: inline-block;
+    margin-bottom: 10px;
 }
 
 #howToUseHeader:hover{
@@ -35,7 +42,7 @@
 }
 
 .howToHighlight{
-    color: rgb(83, 131, 235);
+    color:#850e0e;
 }
 
 #addBookContainer{
@@ -45,7 +52,7 @@
 }
 
 #addBookButton{
-    background: rgb(206, 175, 255);
+    background: #c5cbe3;
     padding: 7px;
     width: 50%;
     border: 2px solid  rgb(31, 31, 31);
@@ -66,7 +73,8 @@
     padding: 20px;
     margin: 21px 0;
     border-radius: 5px;
-    background-color: #afe2fa;
+    background: rgb(224,224,224);
+background: linear-gradient(180deg, rgba(224,224,224,1) 0%, rgba(241,241,241,1) 60%);
 }
 
 .header{
@@ -86,6 +94,7 @@
 .status{
     display: inline-block;
     margin: 0;
+    margin-bottom: 10px;
     padding: 5px;
 }
 
@@ -96,13 +105,14 @@
 }
 
 .read{
-    background-color: rgba(76, 212, 76, 0.60);
-    border: 1px solid rgb(31, 179, 31);
+    background-color: #699e3c;
+    border: 2px solid rgb(31, 31, 31);
+    border-radius: 2px;
 }
 
 .notRead{
-    background-color: rgba(255, 122, 122, 0.60);
-    border: 1px solid rgb(224, 85, 85);
+    background-color: #e85a4f;
+    border: 2px solid rgb(31, 31, 31);
 }
 
 .deleteButtonContainer{
@@ -110,10 +120,11 @@
 }
 
 .deleteButton{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(31, 31, 31);
     color: white;
     padding: 5px 10px;
     border: 1px solid black;
+    font-size: 14px;
 }
 
 /* Modal */
@@ -132,7 +143,7 @@
 
 .modal-heading{
     padding: 16px;
-    background-color: #ffce95;
+    background-color: #d8c3a5;
 }
 
 .modalHeadingText{
@@ -163,7 +174,7 @@
 }
 
 .close{
-    color: #aaa;
+    color: rgb(0, 0, 0);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -176,7 +187,7 @@
 }
 
 #saveBookButton{
-    background-color: #ffce95;
+    background-color: #d8c3a5;
     border: 1px solid black;
     width: 200px;
 }
